@@ -1,6 +1,6 @@
 {
   "name": "enfsensure-promise",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Ensure file, folder, link or symlink existence in file system for node fs module with promises",
   "license": "CC-BY-4.0",
   "author": {
@@ -35,8 +35,8 @@
     "mocha": "^3.2.0",
     "should": "^11.2.1",
     "rimraf": "^2.6.1",
-    "enfspatch-promise":"^1.0",
-    "enfsmkdirp":"^1.0"
+    "enfspatch-promise": "^1.0",
+    "enfsmkdirp": "^1.0"
   },
   "keywords": [
     "append",
