@@ -93,20 +93,18 @@ describe("enfsensure symlink", function () {
                 return;
             }
             let srcContent, stat, dstContent;
-            (err === null).should.be.equal(true);
             return ensureSymlinkPaths(this.src, this.dst)
-                .then(function (relative) {
-                    return enFs.readFileP(relative.toCwd, "utf8")
-                }).then(function (srcContent_) {
+                .then((relative) => enFs.readFileP(relative.toCwd, "utf8"))
+                .then((srcContent_) => {
                     srcContent = srcContent_;
                     return enFs.lstatP(this.dst);
-                }).then(function (stat_) {
+                }).then((stat_) => {
                     stat = stat_;
                     return enFs.readFileP(this.dst, "utf8");
-                }).then(function (dstContent_) {
+                }).then((dstContent_) => {
                     dstContent = dstContent_;
                     return enFs.readdirP(nodePath.dirname(this.dst));
-                }).then(function (dstDirContent) {
+                }).then((dstDirContent) => {
                     stat.isSymbolicLink().should.be.equal(true);
                     srcContent.should.be.equal(dstContent);
                     dstDirContent.indexOf(nodePath.basename(this.dst)).should.be.greaterThanOrEqual(0);
@@ -153,7 +151,6 @@ describe("enfsensure symlink", function () {
             if (err && err.code === "EPERM" && isWindows) {
                 return;
             }
-            (err === null || typeof err === "undefined").should.be.equal(true);
             return enFs.readFileP(this.dst, "utf8").then((contentAfter) => {
                 this.contentBefore.should.be.equal(contentAfter);
             });
@@ -175,20 +172,19 @@ describe("enfsensure symlink", function () {
             if (err && err.code === "EPERM" && isWindows) {
                 return;
             }
-            (err === null || typeof err === "undefined").should.be.equal(true);
             let stat, srcContent, dstContent;
             return ensureSymlinkPaths(this.src, this.dst).then(function (relative) {
                 return enFs.readdirP(relative.toCwd);
-            }).then(function (srcContent_) {
+            }).then((srcContent_) => {
                 srcContent = srcContent_;
                 return enFs.lstatP(this.dst);
-            }).then(function (stat_) {
+            }).then((stat_) => {
                 stat = stat_;
                 return enFs.readdirP(this.dst);
-            }).then(function (dstContent_) {
+            }).then((dstContent_) => {
                 dstContent = dstContent_;
                 return enFs.readdirP(nodePath.dirname(this.dst));
-            }).then(function (dstDirContent) {
+            }).then((dstDirContent) => {
                 stat.isSymbolicLink().should.be.equal(true);
                 srcContent.should.be.eql(dstContent);
                 dstDirContent.indexOf(nodePath.basename(this.dst)).should.be.greaterThanOrEqual(0);
@@ -248,7 +244,6 @@ describe("enfsensure symlink", function () {
             if (err && err.code === "EPERM" && isWindows) {
                 return;
             }
-            (err === null || typeof err === "undefined").should.be.equal(true);
             return enFs.readdirP(this.dst).then((contentAfter) => {
                 this.contentBefore.should.be.eql(contentAfter);
             });
