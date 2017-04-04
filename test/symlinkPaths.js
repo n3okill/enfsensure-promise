@@ -8,7 +8,7 @@
 
 const nodePath = require("path");
 const nodeOs = require("os");
-const enFs = require("enfspatch");
+const enFs = require("enfspatch-promise");
 const enfsmkdirp = require("enfsmkdirp");
 const cwd = process.cwd();
 const rimraf = require("rimraf");
