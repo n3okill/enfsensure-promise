@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/n3okill/enfsensure.svg)](https://travis-ci.org/n3okill/enfsensure)
-[![Build status](https://ci.appveyor.com/api/projects/status/xa45r6pkf4etbo6s?svg=true)](https://ci.appveyor.com/project/n3okill/enfsensure)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/06869443a19a488ea35387168e6d808b)](https://www.codacy.com/app/n3okill/enfsensure)
+[![Build Status](https://travis-ci.org/n3okill/enfsensure-promise.svg)](https://travis-ci.org/n3okill/enfsensure-promise)
+[![AppVeyor status](https://ci.appveyor.com/api/projects/status/6jb3qn78upj5754k?svg=true)](https://ci.appveyor.com/project/n3okill/enfsensure-promise)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98f28256617348f4826e34c588217b64)](https://www.codacy.com/app/n3okill/enfsensure-promise)
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=64PYTCDH5UNZ6)
 
-[![NPM](https://nodei.co/npm/enfsensure.png)](https://nodei.co/npm/enfsensure/)
+[![NPM](https://nodei.co/npm/enfsensure-promise.png)](https://nodei.co/npm/enfsensure-promise/)
 
 enfsensure-promise
 ==================
